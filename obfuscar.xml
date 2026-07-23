@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Obfuscator>
-  <Var Name="InPath" Value=".\bin\Debug\net8.0-windows10.0.22621.0" />
-  <Var Name="OutPath" Value="$(InPath)\Obfuscated" />
-  <Var Name="KeepPublicApi" Value="false" />
-  <Var Name="HidePrivateApi" Value="true" />
-  <Var Name="HideStrings" Value="true" />
-  <Module file="$(InPath)\TimeSharp.dll" />
-</Obfuscator>
