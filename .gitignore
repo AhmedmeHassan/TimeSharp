@@ -1,0 +1,7 @@
+TimeAttendance.mdf
+*.xml
+*.rdlc
+*.dll
+*.ldf
+*.pdb
+*.exe
