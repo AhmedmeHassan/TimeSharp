@@ -1,6 +1,5 @@
-TimeAttendance.mdf
+*.mdf
 *.xml
-*.rdlc
 *.dll
 *.ldf
 *.pdb
