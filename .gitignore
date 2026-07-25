@@ -4,5 +4,3 @@ TimeAttendance.mdf
 *.dll
 *.ldf
 *.pdb
-*.exe
-!ZktecoDriver.exe
