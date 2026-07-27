@@ -6,55 +6,55 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.19043cm</Width>
+              <Width>2.17978cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.21035cm</Width>
+              <Width>1.1997cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.45862cm</Width>
+              <Width>1.44797cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.74675cm</Width>
+              <Width>1.7361cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.44932cm</Width>
+              <Width>1.43867cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.46158cm</Width>
+              <Width>1.45093cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.65159cm</Width>
+              <Width>1.64094cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.29217cm</Width>
+              <Width>1.28152cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.9183cm</Width>
+              <Width>1.90765cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.44148cm</Width>
+              <Width>1.43083cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.65463cm</Width>
+              <Width>1.64398cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.10999cm</Width>
+              <Width>1.09934cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.58891cm</Width>
+              <Width>1.57826cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.74657cm</Width>
+              <Width>1.73592cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.62964cm</Width>
+              <Width>1.61899cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.69552cm</Width>
+              <Width>1.68487cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.93515cm</Width>
+              <Width>1.9245cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -985,7 +985,9 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=iif(cdate(Fields!EndDate.Value) =cdate(Fields!attdate.Value),"",Fields!EndDate.Value)</Value>
+                              <Value>=iif(IsNothing(Fields!EndDate.Value) or IsNothing(Fields!attdate.Value), 
+     "", 
+     iif(cdate(Fields!EndDate.Value) = cdate(Fields!attdate.Value), "", Fields!EndDate.Value))</Value>
                               <Style>
                                 <FontSize>9pt</FontSize>
                               </Style>
@@ -1248,7 +1250,7 @@
         <Top>0.86995cm</Top>
         <Left>0.3175cm</Left>
         <Height>1.4825cm</Height>
-        <Width>27.181cm</Width>
+        <Width>27cm</Width>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -1666,7 +1668,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>employeeSheetDS</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Ahmed.DESKTOP-6MDQF24\source\repos\TimeSharp\Models\employeeSheetDS.xsd</rd:SchemaPath>
+        <rd:SchemaPath>\Models\employeeSheetDS.xsd</rd:SchemaPath>
         <rd:TableName>EmployeeSheet</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
